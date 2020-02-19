@@ -63,7 +63,6 @@ def hello_world():
 @app.route('/result', methods=['get', 'post'])
 def result():
     hello = rps(fun[0])
-    go = 'tie'
     if hello == 'tie':
         go = 'tie'
     elif hello == 'win':
