@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock|Paper|Scissors</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}?version=.15">
+</head>
+<body>
+<h1 class="heading" style="color: white">Rock, Paper, Scissors</h1>
+<form  class="rock" method="POST" action="/rock">
+    <input height="150" width="150" type="image"  name="choices" src="{{url_for('static',filename='rock.gif')}}">
+    </form>
+    <form class='pap' method="POST" action="/paper">
+        <input height="150" width="150" type="image" name="choices" src="{{url_for('static',filename='paper.png')}}">
+    </form>
+    <form class='sci' method="POST" action="/scissors">
+        <input height="150" width="150" type="image" name="choices" src="{{url_for('static',filename='scissors.png')}}">
+    </form>
+<br>
+</body>
+</html>
