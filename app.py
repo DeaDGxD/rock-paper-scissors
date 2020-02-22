@@ -25,6 +25,8 @@ def rps(u_in):
         go = 'win'
     elif u_in == "scissors" and c_in == "paper":
         go = 'win'
+    else:
+        go = 'Error'
     return go
 fun = []
 
